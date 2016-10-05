@@ -13,6 +13,10 @@ const messages = [
   { regex: /\[Server thread\/INFO]: (Playing effect (.+)$)/, channel: 'verbose' },
   { regex: /\[Server thread\/INFO]: (Played sound (.+)$)/, channel: 'verbose' },
   { regex: /\[Server thread\/INFO]: (\[([\w\_]+): Playing (.+)$)/, channel: 'verbose' },
+  { regex: /\[Server thread\/INFO]: (Set the time to [\d]+)/, channel: 'verbose' },
+  { regex: /\[Server thread\/INFO]: ([\w_]+ did not match the required .+$)/, channel: 'verbose' },
+  { regex: /\[Server thread\/INFO]: (There are [\d\/]+ players online:$)/, channel: 'verbose' },
+  { regex: /\[Server thread\/INFO]: (Given \[.+\] .+ to [\w_]+$)/, channel: 'verbose' },
   { regex: /\[Server thread\/INFO]: (.+$)/, channel: 'info' },
   { regex: /\[Server thread\/WARN]: (.+$)/, channel: 'warn' },
 ];
